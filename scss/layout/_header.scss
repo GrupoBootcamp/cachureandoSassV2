@@ -1,0 +1,120 @@
+.head{
+    background-color: $colorFondo;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav__logo{
+        margin-left: 1rem;
+    }
+    .nav__burger{
+        color:$colorLetra;
+        background: none;
+        border:none;
+        font-size: 1.6rem;
+        display: none;
+    }
+    .nav__links{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+
+        .nav__item{
+            margin:1rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        // esto no estoy segura de que vaya acá o va dentro de nav_item 
+        // .nav__item--search{
+        //     margin-left: 3rem;
+        //     flex-grow: 1;
+        // }
+        .nav__link{
+            color:$colorLetra;
+            font-weight: 700;
+            text-decoration: none;
+            &:hover{
+                 border-bottom:solid 0.2rem $colorLetra;
+            }       
+        
+        }
+
+        // .nav__buttonSearch{
+        //     background-color: $colorLetra;
+        //     border-radius: 15px;
+        //     color: $colorLetraBoton;
+        //     text-decoration: none;
+        //     border: none;
+        //     padding: 0.5rem;
+        //     cursor: pointer;
+        //     transition: all 0.8s;
+        //     &:hover{
+        //         //color:white;
+        //         background-color: $colorBotonHover;
+            
+        //     }
+        
+        // }
+        
+       
+    
+    }
+}
+
+@media (max-width:768px){
+    .nav{
+       // background-color: var(--bridge-color);
+        display: flex;
+        position: fixed;
+        top:0px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+
+        .nav__logo{
+            max-width: 70%;
+        }
+        .nav__burger{
+            background: none;
+            border:none;
+            font-size: 1.6rem;
+            display: block;
+            &:hover{
+              cursor: pointer;
+            }
+        }
+        .nav__links{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            position:fixed;
+            top:50px;
+            width: 100%;
+            align-items: center;
+            /*Modo mobil*/
+            left:100%;
+            transition:left 0.5s;
+            .nav__item{
+                margin:1rem 0;
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+            .nav__link{
+                font-weight: 700;
+                text-decoration: none;
+                &:hover{
+                    border-bottom:none;
+                }    
+            }
+        }
+        .nav__links--visible{
+            left:0;
+        }
+    
+    }
+}
