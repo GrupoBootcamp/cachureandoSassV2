@@ -22,12 +22,9 @@
 .gallery__father{
     margin: 20px;
     perspective: 1000px;
-
-
 }
 
 .gallery__father:hover .gallery__card{
-
     transform: rotateY(180deg);
 }
 
@@ -37,7 +34,6 @@
     position: relative;
     transform-style: preserve-3d;
     transition: all 600ms;
-
 }
 
 .gallery__card__front{
@@ -60,7 +56,6 @@
 .gallery__card__back{
     transform: rotateY(180deg);
     background: $colorLetraBoton;
-
 }
 
 .gallery__body__card_front{
@@ -93,7 +88,6 @@
 .gallery__body__card_back p{
     margin-top: 30px;
     font-size: 18px;
-   
 }
 
 .gallery__body__card_back input{
@@ -107,7 +101,6 @@
     box-shadow: 1px 1px 30px -5px $colorBotonHover;
     border-radius: 10px;
     transition: box-shadow 600ms;
-    
 }
 
 .gallery__body__card_back input:hover{
