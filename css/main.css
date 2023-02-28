@@ -31,6 +31,7 @@
   margin-bottom: 5px;
   font-size: 1rem;
   font-family: "Roboto";
+  font-weight: bold;
 }
 .footer__socialNetworks a {
   color: #756E97;
@@ -370,6 +371,7 @@ footer .footer_dateTime {
 
 .nav__link:hover {
   border-bottom: solid 0.2rem #756E97;
+  color: #756E97;
 }
 
 .nav__burger {

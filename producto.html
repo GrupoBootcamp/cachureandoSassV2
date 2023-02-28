@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/main.css">
+
     <title>Cachureando Productos</title>
 </head>
 <body>
-        <!--Bloque Header-Navbar-->
+    <!--Bloque Header-Navbar-->
     <header class="head">
         <nav class="nav">
             <a href="#"><img src="/img/logov2.webp" alt="imagen no encontrada" class="nav__logo"></a>
@@ -39,7 +40,7 @@
         </div>
     </div>
 
-        <!-- contenedor aside y galeria de productos -->
+    <!-- contenedor aside y galeria de productos -->
    <div class="aside row container-fluid mx-0 my-8 justify-content-center aside">
         <div class="col-2 m-0 d-none d-sm-none d-lg-block">
             <div class="accordion" id="accordionExample">
@@ -220,33 +221,36 @@
             </div>
         </div>
     </div>
-    <!--Bloque Footer-->
-    <footer>
-        <div class="footer_container">
-            <div class="footer__box">
-                 <h2>Contacto</h2>
-                 <p>
-                    Arlegui 330<br>
-                    Viña del Mar.<br>
-                    Teléfonos: +56 32 28854211 / +56 32 28854330.<br>
-                 </p>
-               
-            </div>
-            <div class="footer__socialNetworks">
-                <h2>Redes Sociales</h2>
-                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a>
-            </div>
-        </div>
-        <div class="footer__copyright">
-            <hr>
-            <p >Todos los derechos reservados © 2023 <b>Cachureando </b></p> 
-            <div class="footer__dateTime" id="reloj"></div>    
-            <div class="footer__dateTime" id="fecha"></div>
-            <br>
-        </div>
-    </footer>
-    <!--Fin bloque Footer-->
+    <div class="container-fluid">
+        <footer>
+             <div class="bg-puente">
+                  <div class="row">
+                       <div class="row align-items-center justify-content-center text-center " >             
+                            <div class="text-letra" id="reloj" style="font-size:10px;"></div>    
+                            <div class="text-letra" id="fecha" style="font-size:10px;"></div>
+                       </div>
+                       <div class="col-xs-12 col-md-6 text-left">
+                            <h6 class="text-letra" style="font-size:12px">CONTACTO:</h6>
+                            <h6 class="text-letra lead" style="font-size:12px">
+                                 Arlegui 330<br>
+                                 Viña del Mar.<br>
+                                 Teléfonos: +56 32 28854211 â€“ +56 32 28854330.<br>
+                            </h6>
+                       </div>
+                       <div class="col-xs-12 col-md-6 text-center">
+                            <h6 class="text-letra" style="font-size:12px">ENCUENTRANOS EN LAS REDES</h6>
+                            <div class="footer__socialNetworks">
+                                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a>
+                            </div>
+                            <div class="col-md-12 col-md-6 text-center">
+                                 <p class="text-letra small">Equipo Cachureando @2023v. Todos los derechos reservados.</p>
+                            </div>
+                       </div>
+                  </div>
+             </div>
+        </footer>
+   </div>      
     <script src="./js/fecha_hora.js"></script>
     <script src="https://kit.fontawesome.com/9d55460b02.js" crossorigin="anonymous"></script>
     <script src="/js/app.js"></script>
