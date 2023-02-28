@@ -328,8 +328,9 @@ footer .footer_dateTime {
   margin: 0;
   padding: 0;
   background-color: #FADECF;
-  width: 100%;
   position: fixed;
+  width: 100%;
+  top: 0px;
   z-index: 1000;
 }
 
