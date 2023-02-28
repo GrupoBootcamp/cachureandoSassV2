@@ -1,3 +1,9 @@
+// body{
+//     margin: 0;
+//     padding: 0;
+//     background: $colorLetraBoton;
+// }
+
 .gallery{
     max-width: 1200px;
     margin: auto;
@@ -8,30 +14,19 @@
     flex-wrap: wrap;
  }
 
-
-
 .mainGallery__title{
     color: $colorLetra;
     text-align: center;
-    // text-decoration: underline;
-    // text-decoration-style: wavy;
-
 }
 
 .gallery__father{
     margin: 20px;
     perspective: 1000px;
-
-
 }
 
 .gallery__father:hover .gallery__card{
-
     transform: rotateY(180deg);
 }
-
-
-
 
 .gallery__card{
     width: 350px;
@@ -39,14 +34,12 @@
     position: relative;
     transform-style: preserve-3d;
     transition: all 600ms;
-
 }
 
 .gallery__card__front{
     background-size: cover;
     background-position: center;
  }
-
 
 .gallery__card__front,
 .gallery__card__back{
@@ -63,7 +56,6 @@
 .gallery__card__back{
     transform: rotateY(180deg);
     background: $colorLetraBoton;
-
 }
 
 .gallery__body__card_front{
@@ -96,7 +88,6 @@
 .gallery__body__card_back p{
     margin-top: 30px;
     font-size: 18px;
-   
 }
 
 .gallery__body__card_back input{
@@ -110,7 +101,6 @@
     box-shadow: 1px 1px 30px -5px $colorBotonHover;
     border-radius: 10px;
     transition: box-shadow 600ms;
-    
 }
 
 .gallery__body__card_back input:hover{
